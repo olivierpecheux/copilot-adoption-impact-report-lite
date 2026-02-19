@@ -48,7 +48,7 @@ Spoiler: **prompting**. This page compares the Bottom 50% and Top 25% of users s
 
 Finally, zoom into the last 4 months to spot which teams are pulling ahead and which are falling behind. Each column shows one month, with the monthly average of weekly usage — smoothing out week-to-week noise so you can focus on real trends. Toggle between metrics (active users, active days, weekly actions, or per-app usage) to find the pockets of high adoption you can learn from — and the lagging teams that need enablement.
 
-![Adoption Heatmap](images/adoption-heatmap.png)
+![Adoption Heatmap](images/adoption-heatmap-last-4-months.png)
 
 ---
 

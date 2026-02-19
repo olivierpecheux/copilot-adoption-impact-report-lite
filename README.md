@@ -15,7 +15,7 @@ A ready-to-use Power BI template (.pbit) to measure **Microsoft 365 Copilot adop
 ### 1. 📈 Adoption Overview
 *How is your Copilot adoption trending across user segments?*
 
-Start here. Get the big picture: how many users are licensed, how many are actually using Copilot, and how that's trending week over week. Usage is broken down by organization and by usage tier (Bottom 25% through Top 10%) so you can see whether adoption is broad or concentrated.
+Start here. Get the big picture: how many users are licensed, how many are actually using Copilot, and how that's trending month over month. Each column shows the average weekly Copilot actions for that month. Usage is broken down by organization and by usage tier (Bottom 25% through Top 10%) so you can see whether adoption is broad or concentrated.
 
 ![Adoption Overview](images/adoption-overview.png)
 
@@ -24,7 +24,7 @@ Start here. Get the big picture: how many users are licensed, how many are actua
 ### 2. 💼 Assisted Value (ROI)
 *Is your Copilot investment paying off?*
 
-Now that you know who's using Copilot, see what it's worth. This page estimates the total time saved (Assisted Hours), calculates how much each assisted hour needs to be worth to break even, and shows the estimated ROI multiplier. The breakdown by usage tier reveals where value is concentrated — and where the investment isn't paying back yet.
+Now that you know who's using Copilot, see what it's worth. This page estimates the total time saved (Assisted Hours), calculates how much each assisted hour needs to be worth to break even, and shows the estimated ROI multiplier. The breakdown by usage tier reveals where value is concentrated — and where the investment isn't paying back yet. Use the **ROI Scenario** toggle to adjust assumptions and stress-test the analysis.
 
 ![Assisted Value](images/assisted-value.png)
 
@@ -33,11 +33,11 @@ Now that you know who's using Copilot, see what it's worth. This page estimates 
 ### 3. 🔍 Most Popular Features
 *What are the top users doing that others aren't?*
 
-Spoiler: **prompting**. This page compares the Bottom 50% and Top 25% of users side by side. You'll see that top users aren't just using Copilot more — they're using it differently, with significantly more Chat (work) and Chat (web) prompts. The treemap breakdown shows exactly which features drive the gap.
+Spoiler: **prompting**. This page compares the Bottom 50% and Top 25% of users side by side. You'll see that top users aren't just using Copilot more — they're using it differently, with significantly more Chat (work) and Chat (web) prompts. The treemap breakdown shows exactly which features drive the gap. Use the **App Selector** toggle to deep dive into feature usage for each app.
 
 ![Most Popular Features](images/most-popular-features.png)
 
-> **Note:** The data available today only tells us *how many* prompts were submitted — not *what kind*. However, Microsoft is previewing a richer categorization in the Copilot Dashboard under **Adoption > Adoption by app > Copilot Chat (work)**, breaking prompts into "Ask and find", "Catch up", "Draft and brainstorm", and "Other".
+> **Note:** For Chat (web) and Chat (work), the data available today only tells us *how many* prompts were submitted — not *what kind*. The other apps (Teams, Outlook, Word, Excel, PowerPoint) do have more detailed feature breakdowns. However, Microsoft is previewing a richer categorization for Chat in the Copilot Dashboard under **Adoption > Adoption by app > Copilot Chat (work)**, breaking prompts into "Ask and find", "Catch up", "Draft and brainstorm", and "Other".
 >
 > ![Copilot Chat prompt categories (Preview)](images/prompt-categories-preview.png)
 
@@ -57,7 +57,9 @@ Finally, zoom into the last 4 weeks to spot which teams are pulling ahead and wh
 
 The template **auto-detects** which data source you're using and adjusts calculations accordingly.
 
-### Copilot Dashboard Export (CSV) — Primary use case
+### Step 1 — Get your data
+
+#### Copilot Dashboard Export (CSV) — Primary use case
 
 The easiest way to get started. Download the CSV export from the [Microsoft 365 Admin Center > Copilot Dashboard](https://admin.microsoft.com/) — no Viva Insights license required.
 
@@ -70,9 +72,9 @@ The easiest way to get started. Download the CSV export from the [Microsoft 365 
 
 ![Copilot Dashboard Export](images/copilot-dashboard-export.png)
 
-### Viva Insights Custom Person Query (CSV or DirectQuery) — Advanced
+#### Viva Insights Custom Person Query (CSV or DirectQuery) — Advanced
 
-This template is also compatible with a custom person query from [Viva Insights Advanced Analyst](https://analysis.insights.cloud.microsoft/) that includes all Copilot metrics. This gives you native Assisted Hours and richer work pattern data.
+This template is also compatible with a custom person query from [Viva Insights Advanced Analyst](https://analysis.insights.cloud.microsoft/) that includes all Copilot metrics. This gives you Microsoft's actual Assisted Hours metric — no recalculation needed.
 
 However, if you have Viva Insights access, the [**Super User Adoption Report**](https://github.com/microsoft/decodingsuperusage) is likely a better fit — it goes deeper into super user patterns, adoption journeys, and behavioral impact.
 
@@ -81,7 +83,7 @@ However, if you have Viva Insights access, the [**Super User Adoption Report**](
 2. Create a **Custom Person Query** and include **all Copilot metrics** (Copilot actions, active days, enabled days, meeting summaries, chat prompts, etc.)
 3. Export as CSV **or** note the Partition ID and Query ID for DirectQuery
 
-### Open the Template
+### Step 2 — Open the template
 
 1. Download the `.pbit` file from this repository
 2. Double-click to open in **Power BI Desktop**
@@ -98,7 +100,7 @@ However, if you have Viva Insights access, the [**Super User Adoption Report**](
 
 ![Template parameters](images/template-parameters.png)
 
-### Configure Slicers
+#### Configure Slicers
 
 Once loaded, adjust the report slicers to fit your organization:
 

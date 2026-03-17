@@ -6,7 +6,7 @@
 
 A ready-to-use Power BI template (.pbit) to measure **Microsoft 365 Copilot adoption, usage patterns, and estimated business impact** across your organization.
 
-### 📥 [Download the Template (.pbit)](M365%20Copilot%20-%20Adoption%20and%20Impact%20Report%20(Lite%20version).pbit)
+### 📥 [Download the Template (.pbit)](M365%20Copilot%20-%20Adoption%20%26%20Impact%20Report.pbit)
 
 ---
 
